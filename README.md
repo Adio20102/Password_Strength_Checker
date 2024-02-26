@@ -5,7 +5,7 @@ The purpose of this project is to to evaluate the strength of passwords. With th
 <strong>Functionality:</strong>
 <ul data-sourcepos="5:1-8:70">
 <span>
-</span><li data-sourcepos="5:1-5:60"><span>It prompts the user to enter a password in an entry field.</span></li><span>
+</span><li data-sourcepos="5:1-5:60"><span>It prompts the user to enter a password in an entry field. </span></li><span>
 </span><li data-sourcepos="6:1-8:70"><span>It checks the password strength based on:</span><span>
 </span><ul data-sourcepos="7:5-8:70"><span>
 </span><li data-sourcepos="7:5-7:48"><strong>Length:</strong><span> Must be at least 8 characters.</span></li><span>
