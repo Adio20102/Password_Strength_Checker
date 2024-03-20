@@ -3,7 +3,6 @@ from tkinter import messagebox
 
 def checkPassword(password):
     upperChars, lowerChars, specialChars, digits, length, spaces = 0, 0, 0, 0, 0, 0
-    password = password.strip()
     length = len(password)
     messages = []
     if(length==0):
