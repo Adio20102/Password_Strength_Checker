@@ -42,22 +42,26 @@ def checkPassword(password):
         if digits == 0:
             messages.append("Password must contain at least one digit!")
     if len(messages) > 0:
-     messagebox.showwarning("Password Strength Checker", "\n".join(messages))
+        messagebox.showwarning("Password Strength Checker", "\n".join(messages))
 
 def on_check_password():
     password = password_entry.get()
     checkPassword(password)
 
 root = tk.Tk()
+root.resizable(False, False)
 root.title("Password Strength Checker")
 
-label = tk.Label(root, text="Enter Password :")
+label_font = ('Arial', 12)
+label = tk.Label(root, text="Enter Password:",font=label_font)
 label.pack(pady=5, padx=100)
 
-password_entry = tk.Entry(root)
-password_entry.pack(pady=5, padx=100)
+entry_font = ('Arial', 16)
+password_entry = tk.Entry(root,  font=entry_font, border=round(6))
+password_entry.pack(pady=5, padx=100,ipady=4)
 
-check_button = tk.Button(root, text=" Check ", command=on_check_password)
-check_button.pack(pady=5, padx=100)
+checkfont= ('Arial', 12)
+check_button = tk.Button(root, text=" CHECK ", command=on_check_password,font=checkfont, width=10)
+check_button.pack(pady=5, padx=100, ipady=2)
 
 root.mainloop()
